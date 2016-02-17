@@ -5,7 +5,7 @@
     <color name="colorAccent">#FF4081</color>
     <color name="appTitleColor">#004D40</color>
     <color name="appBGColor">#E3F2FD</color>
-    <color name="btnBGColor">#009688</color>
-    <color name="btnCapstoneBGColor">#827717</color>
+    <color name="btnBGColor">#00C853</color>
+    <color name="btnCapstoneBGColor">#0091EA</color>
     <color name="btnTextColor">#FFFFFF</color>
 </resources>
