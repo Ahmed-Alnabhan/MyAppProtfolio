@@ -8,7 +8,8 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.elearnna.myappportfolio.MainActivity"
     tools:showIn="@layout/activity_main"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:background="@color/appBGColor">
 
 
     <LinearLayout
@@ -27,7 +28,7 @@
             android:layout_margin="@dimen/activity_horizontal_margin"
             android:layout_gravity="center_horizontal"
             android:typeface="normal"
-            android:textColor="#1a237e"
+            android:textColor="@color/appTitleColor"
             android:textIsSelectable="false"
             android:textStyle="bold" />
     </LinearLayout>
@@ -37,7 +38,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.68">
+        android:layout_weight=".68"
+        >
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="wrap_content"
@@ -54,43 +56,67 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/btn_margin"
             android:text="@string/btnpotify"
+            android:elevation="@dimen/btn_elevation"
             android:id="@+id/button"
+            android:textColor="@color/btnTextColor"
+            android:background="@color/btnBGColor"
             android:layout_gravity="center_horizontal" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/btn_margin"
             android:text="@string/btnScore"
+            android:elevation="@dimen/btn_elevation"
             android:id="@+id/button2"
+            android:textColor="@color/btnTextColor"
+            android:background="@color/btnBGColor"
             android:layout_gravity="center_horizontal" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/btn_margin"
             android:text="@string/btnLibrary"
+            android:elevation="@dimen/btn_elevation"
             android:id="@+id/button3"
+            android:textColor="@color/btnTextColor"
+            android:background="@color/btnBGColor"
             android:layout_gravity="center_horizontal" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/btn_margin"
             android:text="@string/btnBuildIt"
+            android:elevation="@dimen/btn_elevation"
             android:id="@+id/button4"
+            android:textColor="@color/btnTextColor"
+            android:background="@color/btnBGColor"
             android:layout_gravity="center_horizontal" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/btn_margin"
             android:text="@string/btnBacon"
+            android:elevation="@dimen/btn_elevation"
             android:id="@+id/button5"
+            android:textColor="@color/btnTextColor"
+            android:background="@color/btnBGColor"
             android:layout_gravity="center_horizontal" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/btn_margin"
             android:text="@string/btnCapstone"
+            android:elevation="@dimen/btn_elevation"
             android:id="@+id/button6"
+            android:textColor="@color/btnTextColor"
+            android:background="@color/btnCapstoneBGColor"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
         <LinearLayout

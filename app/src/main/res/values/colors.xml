@@ -3,4 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="appTitleColor">#004D40</color>
+    <color name="appBGColor">#E3F2FD</color>
+    <color name="btnBGColor">#009688</color>
+    <color name="btnCapstoneBGColor">#827717</color>
+    <color name="btnTextColor">#FFFFFF</color>
 </resources>
