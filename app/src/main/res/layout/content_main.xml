@@ -57,12 +57,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/btn_margin"
-            android:text="@string/btnpotify"
+            android:text="@string/btnSpotify"
             android:elevation="@dimen/btn_elevation"
             android:id="@+id/button"
             android:textColor="@color/btnTextColor"
             android:background="@color/btnBGColor"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:tag="Spotify Streamer"
+            android:onClick="launchAProgect"/>
 
         <Button
             android:layout_width="match_parent"
@@ -73,7 +75,9 @@
             android:id="@+id/button2"
             android:textColor="@color/btnTextColor"
             android:background="@color/btnBGColor"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:tag="Football Score"
+            android:onClick="launchAProgect"/>
 
         <Button
             android:layout_width="match_parent"
@@ -84,7 +88,9 @@
             android:id="@+id/button3"
             android:textColor="@color/btnTextColor"
             android:background="@color/btnBGColor"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:tag="Library"
+            android:onClick="launchAProgect" />
 
         <Button
             android:layout_width="match_parent"
@@ -95,7 +101,9 @@
             android:id="@+id/button4"
             android:textColor="@color/btnTextColor"
             android:background="@color/btnBGColor"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:tag="Build It Bigger"
+            android:onClick="launchAProgect"/>
 
         <Button
             android:layout_width="match_parent"
@@ -106,7 +114,9 @@
             android:id="@+id/button5"
             android:textColor="@color/btnTextColor"
             android:background="@color/btnBGColor"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:tag="XYZ Reader"
+            android:onClick="launchAProgect" />
 
         <Button
             android:layout_width="match_parent"
@@ -117,7 +127,9 @@
             android:id="@+id/button6"
             android:textColor="@color/btnTextColor"
             android:background="@color/btnCapstoneBGColor"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:tag="Own Capstone"
+            android:onClick="launchAProgect" />
     </LinearLayout>
         <LinearLayout
             android:orientation="vertical"
