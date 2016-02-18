@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/portfolio_title"
-            android:id="@+id/textView"
+            android:id="@+id/portfolioTitle"
             android:layout_margin="@dimen/activity_horizontal_margin"
             android:layout_gravity="center_horizontal"
             android:typeface="normal"
@@ -54,80 +54,44 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.10">
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/btn_margin"
+            style="@style/AllProjectsButtons.ProjectsButtons"
             android:text="@string/btnSpotify"
-            android:elevation="@dimen/btn_elevation"
-            android:id="@+id/button"
-            android:textColor="@color/btnTextColor"
-            android:background="@color/btnBGColor"
-            android:layout_gravity="center_horizontal"
+            android:id="@+id/spotifyReaderAppButton"
             android:tag="Spotify Streamer"
             android:onClick="launchAProgect"/>
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/btn_margin"
+            style="@style/AllProjectsButtons.ProjectsButtons"
             android:text="@string/btnScore"
-            android:elevation="@dimen/btn_elevation"
-            android:id="@+id/button2"
-            android:textColor="@color/btnTextColor"
-            android:background="@color/btnBGColor"
-            android:layout_gravity="center_horizontal"
+            android:id="@+id/scoreAppButton"
             android:tag="Football Score"
             android:onClick="launchAProgect"/>
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/btn_margin"
+            style="@style/AllProjectsButtons.ProjectsButtons"
             android:text="@string/btnLibrary"
-            android:elevation="@dimen/btn_elevation"
-            android:id="@+id/button3"
-            android:textColor="@color/btnTextColor"
-            android:background="@color/btnBGColor"
-            android:layout_gravity="center_horizontal"
+            android:id="@+id/libraryAppButton"
             android:tag="Library"
             android:onClick="launchAProgect" />
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/btn_margin"
+            style="@style/AllProjectsButtons.ProjectsButtons"
             android:text="@string/btnBuildIt"
-            android:elevation="@dimen/btn_elevation"
-            android:id="@+id/button4"
-            android:textColor="@color/btnTextColor"
-            android:background="@color/btnBGColor"
-            android:layout_gravity="center_horizontal"
+            android:id="@+id/buildItAppButton"
             android:tag="Build It Bigger"
             android:onClick="launchAProgect"/>
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/btn_margin"
+            style="@style/AllProjectsButtons.ProjectsButtons"
             android:text="@string/btnBacon"
-            android:elevation="@dimen/btn_elevation"
-            android:id="@+id/button5"
-            android:textColor="@color/btnTextColor"
-            android:background="@color/btnBGColor"
-            android:layout_gravity="center_horizontal"
+            android:id="@+id/xyzAppButton"
             android:tag="XYZ Reader"
             android:onClick="launchAProgect" />
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/btn_margin"
+            style="@style/AllProjectsButtons.CapstoneButtons"
             android:text="@string/btnCapstone"
-            android:elevation="@dimen/btn_elevation"
-            android:id="@+id/button6"
-            android:textColor="@color/btnTextColor"
-            android:background="@color/btnCapstoneBGColor"
-            android:layout_gravity="center_horizontal"
+            android:id="@+id/capstoneButton"
             android:tag="Own Capstone"
             android:onClick="launchAProgect" />
     </LinearLayout>
