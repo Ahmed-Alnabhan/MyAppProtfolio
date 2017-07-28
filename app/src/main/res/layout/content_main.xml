@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.elearnna.myappportfolio.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@color/appBGColor">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/portfolio_title"
+            android:id="@+id/portfolioTitle"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:gravity="center_horizontal"
+            android:typeface="normal"
+            android:textColor="@color/appTitleColor"
+            android:textIsSelectable="false"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.375">
+                    </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.25">
+                <Button
+                    style="@style/AllProjectsButtons.ProjectsButtons"
+                    android:text="@string/btnInsar"
+                    android:id="@+id/InsarAppButton"
+                    android:tag="com.Nabhan.insar"
+                    android:onClick="launchAProgect"/>
+
+                <Button
+                    style="@style/AllProjectsButtons.ProjectsButtons"
+                    android:text="@string/btnPopularMoviesI"
+                    android:id="@+id/popularMoviesIAppButton"
+                    android:tag="com.elearnna.popularmovies"
+                    android:onClick="launchAProgect"/>
+
+                <Button
+                    style="@style/AllProjectsButtons.ProjectsButtons"
+                    android:text="@string/btnPopularMoviesII"
+                    android:id="@+id/popularMoviesIIAppButton"
+                    android:tag="com.elearnna.www.popularmovies"
+                    android:onClick="launchAProgect" />
+
+                <Button
+                    style="@style/AllProjectsButtons.ProjectsButtons"
+                    android:text="@string/btnBakingRecipes"
+                    android:id="@+id/buildItAppButton"
+                    android:tag="com.elearnna.www.bakingapp"
+                    android:onClick="launchAProgect"/>
+
+                <Button
+                    style="@style/AllProjectsButtons.ProjectsButtons"
+                    android:text="@string/btnBuildIt"
+                    android:id="@+id/buildItBiggerAppButton"
+                    android:tag="Build It Bigger"
+                    android:onClick="launchAProgect" />
+
+                <Button
+                    style="@style/AllProjectsButtons.ProjectsButtons"
+                    android:text="@string/btnAppMaterial"
+                    android:id="@+id/appMaterialAppButton"
+                    android:tag="Make App Material"
+                    android:onClick="launchAProgect" />
+
+                <Button
+                    style="@style/AllProjectsButtons.CapstoneButtons"
+                    android:text="@string/btnCapstone"
+                    android:id="@+id/capstoneButton"
+                    android:tag="Own Capstone"
+                    android:onClick="launchAProgect" />
+            </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.375">
+                </LinearLayout>
+            </LinearLayout>
+    </ScrollView>
+</LinearLayout>
