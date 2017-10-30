@@ -87,21 +87,21 @@
                     style="@style/AllProjectsButtons.ProjectsButtons"
                     android:text="@string/btnBuildIt"
                     android:id="@+id/buildItBiggerAppButton"
-                    android:tag="Build It Bigger"
+                    android:tag="com.udacity.gradle.builditbigger"
                     android:onClick="launchAProgect" />
 
                 <Button
                     style="@style/AllProjectsButtons.ProjectsButtons"
                     android:text="@string/btnAppMaterial"
                     android:id="@+id/appMaterialAppButton"
-                    android:tag="Make App Material"
+                    android:tag="com.example.xyzreader"
                     android:onClick="launchAProgect" />
 
                 <Button
                     style="@style/AllProjectsButtons.CapstoneButtons"
                     android:text="@string/btnCapstone"
                     android:id="@+id/capstoneButton"
-                    android:tag="Own Capstone"
+                    android:tag="com.elearnna.www.wififingerprint"
                     android:onClick="launchAProgect" />
             </LinearLayout>
                 <LinearLayout

@@ -2,8 +2,6 @@ package com.elearnna.myappportfolio;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -21,15 +19,6 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
     }
 
     /**
@@ -42,7 +31,9 @@ public class MainActivity extends AppCompatActivity {
         String packagePrefix = projectTag.substring(0,4);
         if (packagePrefix.equals(PACKAGE_START_PART)){
             Intent launchIntent = getPackageManager().getLaunchIntentForPackage(projectTag);
-            startActivity(launchIntent);
+            if (launchIntent != null) {
+                startActivity(launchIntent);
+            }
         } else {
             String text = "This button will launch my  " + projectTag + " app.";
             Toast toast = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_SHORT);
